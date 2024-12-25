@@ -1,13 +1,13 @@
 #include<stdio.h>
-void qustion_number_1();
-void qustion_number_2();
-void qustion_number_3();
+void calculate_the_sum_of_two_3_3_matrices();
+void calculate_the_product_of_two_3_3_matrices();
+void print_the_transpose_of_a_given_matrix();
 int main()
 {
-    qustion_number_3();
+    print_the_transpose_of_a_given_matrix();
     return 0;
 }
-void qustion_number_1()
+void calculate_the_sum_of_two_3_3_matrices()
 {
     int a[3][3],b[3][3],c[3][3],i,j;
     printf("\n Enter 9 number of first Matrix : ");
@@ -32,7 +32,7 @@ void qustion_number_1()
             printf("\n");
     }
 }
-void qustion_number_2()
+void calculate_the_product_of_two_3_3_matrices()
 {
     int a[3][3],b[3][3],c[3][3],i,j,k,sum=0;
     printf("\n Enter 9 number of first Matrix : ");
@@ -61,7 +61,7 @@ void qustion_number_2()
             printf("\n");        
     }    
 }
-void qustion_number_3()
+void print_the_transpose_of_a_given_matrix()
 {
     int a[3][3],i,j,k,temp;
     printf("\n Enter 9 number of a Matrix : ");
