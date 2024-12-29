@@ -20,6 +20,8 @@ void check_a_number_is_armstrong_or_not();
 void check_a_number_is_prime_or_not();
 void check_a_number_is_strong_or_not();
 void fibonacci_squence_from_0_to_n();
+void display_even_fibonacci_squence_from_0_to_n();
+void display_odd_fibonacci_squence_from_0_to_n();
 void series_1();
 void series_2();
 void series_3();
@@ -55,6 +57,8 @@ int main()
     check_a_number_is_prime_or_not();
     check_a_number_is_strong_or_not();
     fibonacci_squence_from_0_to_n();
+    display_even_fibonacci_squence_from_0_to_n();
+    display_odd_fibonacci_squence_from_0_to_n();
     series_1();
     series_2();
     series_3();
@@ -346,6 +350,46 @@ void fibonacci_squence_from_0_to_n()
         a=b;
         b=c;
         c=a+b;
+    }
+}
+void display_even_fibonacci_squence_from_0_to_n()
+{
+    int a=0,b=1,c=0,n;
+    printf("\n");
+    printf("\n Enter the value of n : ");
+    scanf("%d",&n);
+    printf("%d",a);
+    printf("\t %d",b);
+    c=a+b;
+    while(c<=n)
+    {
+        if(c%2==0)
+        {
+            printf("\t %d",c);
+        }
+        a=b;
+        b=c;
+        c=a+b; 
+    }
+}
+void display_odd_fibonacci_squence_from_0_to_n()
+{
+    int a=0,b=1,c=0,n;
+    printf("\n");
+    printf("\n Enter the value of n : ");
+    scanf("%d",&n);
+    printf("%d",a);
+    printf("\t %d",b);
+    c=a+b;
+    while(c<=n)
+    {
+        if(c%2!=0)
+        {
+            printf("\t %d",c);
+        }
+        a=b;
+        b=c;
+        c=a+b; 
     }
 }
 void series_1()
