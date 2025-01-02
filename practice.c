@@ -5,13 +5,15 @@ void count_the_digites_of_a_integer();
 void find_the_revers_of_a_integer();
 void check_a_number_is_palindrom_or_not();
 void check_a_number_is_armstrong_number_or_not();
+void check_a_number_is_prime_or_not();
 int main()
 {
-    calculat_the_sum_of_first_n_natural_number_using_loop();
-    count_the_digites_of_a_integer();
-    find_the_revers_of_a_integer();
-    check_a_number_is_palindrom_or_not();
-    check_a_number_is_armstrong_number_or_not();
+    // calculat_the_sum_of_first_n_natural_number_using_loop();
+    // count_the_digites_of_a_integer();
+    // find_the_revers_of_a_integer();
+    // check_a_number_is_palindrom_or_not();
+    // check_a_number_is_armstrong_number_or_not();
+    check_a_number_is_prime_or_not();
     return 0;
 }
 void calculat_the_sum_of_first_n_natural_number_using_loop()
@@ -85,4 +87,22 @@ void check_a_number_is_armstrong_number_or_not()
         printf("%d is an armstrong number",a);
     else
         printf("%d is not an armstrong number",a);
+}
+void check_a_number_is_prime_or_not()
+{
+    int a,n,i;
+    printf("\n");
+    printf("\n Enter a number : ");
+    scanf("%d",&a);
+    n=1;
+    for(i=2;i<=a/2;i++)
+    {
+        n=a%i;
+        if(n==0)
+        break;
+    }
+    if(n!=0)
+    printf("\n %d is a prime number",a);
+    else
+    printf("\n %d is not a prime number",a);
 }
