@@ -7,15 +7,17 @@ void check_a_number_is_palindrom_or_not();
 void check_a_number_is_armstrong_number_or_not();
 void check_a_number_is_prime_or_not();
 void check_a_number_is_strong_or_not();
+void fibonacci_squence_from_0_to_n();
 int main()
 {
-    calculat_the_sum_of_first_n_natural_number_using_loop();
-    count_the_digites_of_a_integer();
-    find_the_revers_of_a_integer();
-    check_a_number_is_palindrom_or_not();
-    check_a_number_is_armstrong_number_or_not();
-    check_a_number_is_prime_or_not();
-    check_a_number_is_strong_or_not();
+    // calculat_the_sum_of_first_n_natural_number_using_loop();
+    // count_the_digites_of_a_integer();
+    // find_the_revers_of_a_integer();
+    // check_a_number_is_palindrom_or_not();
+    // check_a_number_is_armstrong_number_or_not();
+    // check_a_number_is_prime_or_not();
+    // check_a_number_is_strong_or_not();
+    fibonacci_squence_from_0_to_n();
     return 0;
 }
 void calculat_the_sum_of_first_n_natural_number_using_loop()
@@ -126,4 +128,21 @@ void check_a_number_is_strong_or_not()
     printf("\n %d is a strong number",c);
     else
     printf("\n %d is not a strong number",c);
+}
+void fibonacci_squence_from_0_to_n()
+{
+    int a=0,b=1,c,n;
+    printf("\n");
+    printf("\n Enter the value of n : ");
+    scanf("%d",&n);
+    printf("%d",a);
+    printf("\t %d",b);
+    c=a+b;
+    while(c<=n)
+    {
+        printf("\t %d",c);
+        a=b;
+        b=c;
+        c=a+b;
+    }
 }
